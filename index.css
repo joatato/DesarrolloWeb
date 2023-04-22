@@ -1,7 +1,71 @@
-ul{
-    color: rgb(192, 150, 150);
+
+ul {
+    list-style-image:url("png/amongoVerde.png");
 }
 
-li{
+/* li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1px;
+    text-align: right;
+} */
+
+div{
+    /* border-top-color: #9a7373;
+    border-top-width: 10px;
+    background-color: rgb(169, 169, 237); */
 }
+
+body {
+    font-size: 3rem;
+    background-color: #914fc388;
+    background-image:url("./png/Amongus.png");
+    background: linear-gradient(to bottom right, red, blue,rgb(102, 177, 102),rgb(102, 102, 61),purple);
+    background-position: top center;
+}
+
+a:hover {
+    color: red;
+
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a:active {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* CLASES */
+
+.piola{
+    color: red;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#sexo:hover{
+    text-decoration: dotted;
+    text-transform: blink;
+}
+/* Definición de la animación */
+@keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicación de la animación al elemento */
+  .elemento-parpadeante {
+    animation: parpadeo 1s ease-in-out infinite;
+  }
+  
