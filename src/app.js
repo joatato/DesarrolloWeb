@@ -1,32 +1,35 @@
-import path from 'path';
-import express from 'express';
-import { engine } from 'express-handlebars'
+// Aquí ira todo lo que sería sobre el servidor
+// El encargado es: joatato  23
 
-const PORT = 3000;
+import  path  from 'path';
+import  express  from 'express';
+import {engine} from 'express-handlebars'
 
-const app = express();
+const PORT=3000;
+
+const app=express();
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname,'./views'));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended:true}));
 
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname,'./public')));
 
-app.get('/', (req, res) => {
-    res.setHeader('Content-Type', 'text/plain');
+app.get('/',(req,res)=>{
+    res.setHeader('Content-Type','text/plain');
     res.status(200).send('OK');
 })
 
-app.get('/', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
+app.get('/',(req,res)=>{
+    res.setHeader('Content-Type','text/html');
     res.status(200).render('home');
 })
 
-const server = app.listen(PORT, () => {
-    console.log(`Server escuchando en puerto ${PORT}`);
+const server=app.listen(PORT,()=>{
+    console.log(`Server escuchando en puerto PORT`);
 });
 
-server.on('error', (error) => console.log(error));
+server.on('error',(error)=>console.log(error));
