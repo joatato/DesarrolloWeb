@@ -14,8 +14,9 @@ ul {
 body {
     font-size: 3rem;
     background-color: #914fc388;
-    background-image:url("./png/Amongus.png");
     background: linear-gradient(to bottom right, red, blue,rgb(102, 177, 102),rgb(102, 102, 61),purple);
+    background-image:url("./png/Amongus.png");
+    
     background-position: top center;
 }
 
@@ -35,7 +36,7 @@ a:active {
 /* CLASES */
 
 .piola{
-    color: red;
+    color: rgb(98, 0, 255);
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
