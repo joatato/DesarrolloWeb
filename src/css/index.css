@@ -45,6 +45,11 @@ a:hover {
   /* font-weight: 900; */
   /* font-family: Arial, Helvetica, sans-serif; */
 }
+#medio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 #flex {
   display: flex;
