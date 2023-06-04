@@ -3,9 +3,10 @@ import express from 'express';
 import { engine } from 'express-handlebars'
 import { __dirname } from './utils/utils.js';
 import viewsRouter from './router/viewsRouter.js'
+import { config } from './config/config.js';
 
 const app = express();
-const PORT = 3003
+const PORT = config.app.port
 
 app.engine(
     "handlebars",
